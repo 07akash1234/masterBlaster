@@ -9,7 +9,7 @@ var someElseThing;
 var bg ;
 
 function preload() {
-    // create getBackgroundImg( ) here
+    getBackgroundImg();
 }
 
 function setup(){
@@ -44,11 +44,11 @@ async function getBackgroundImg(){
     }else if(something2>=06 && something2==08){
         bg="sunrise2.png";
         }else if(something2>=23 && something2==0){
-            bg="sunrise10.png";
+            bg="sunset10.png";
         }else if(something2==0 && something2<=03){
-            bg="sunrise11.png";
+            bg="sunset11.png";
         }else{
-            bg="sunrise12.png";
+            bg="sunset12.png";
             
         } 
     someElseThing=loadImage(bg); 
